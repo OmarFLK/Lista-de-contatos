@@ -71,8 +71,8 @@ namespace Lista_de_contatos
             saida += String.Format("{0}, {1}", Nome, Sobrenome);
             saida += String.Format("({0}) (1)-(2)",
                 Telefone.Substring(0, 2),
-                Telefone.Substring(2, 4),
-                Telefone.Substring(4, 8));
+                Telefone.Substring(2, 5),
+                Telefone.Substring(7, 4));
             return saida;
         }
     }
