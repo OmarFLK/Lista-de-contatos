@@ -36,6 +36,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.buttonincluir = new System.Windows.Forms.Button();
             this.listboxcontatos = new System.Windows.Forms.ListBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // textboxnome
@@ -48,14 +49,14 @@
             // 
             // textboxsobrenome
             // 
-            this.textboxsobrenome.Location = new System.Drawing.Point(81, 38);
+            this.textboxsobrenome.Location = new System.Drawing.Point(81, 61);
             this.textboxsobrenome.Name = "textboxsobrenome";
             this.textboxsobrenome.Size = new System.Drawing.Size(207, 20);
             this.textboxsobrenome.TabIndex = 2;
             // 
             // textboxtelefone
             // 
-            this.textboxtelefone.Location = new System.Drawing.Point(81, 64);
+            this.textboxtelefone.Location = new System.Drawing.Point(81, 103);
             this.textboxtelefone.Name = "textboxtelefone";
             this.textboxtelefone.Size = new System.Drawing.Size(207, 20);
             this.textboxtelefone.TabIndex = 3;
@@ -73,7 +74,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 45);
+            this.label2.Location = new System.Drawing.Point(12, 64);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(61, 13);
             this.label2.TabIndex = 5;
@@ -82,7 +83,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(12, 71);
+            this.label3.Location = new System.Drawing.Point(12, 110);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(49, 13);
             this.label3.TabIndex = 6;
@@ -90,12 +91,13 @@
             // 
             // buttonincluir
             // 
-            this.buttonincluir.Location = new System.Drawing.Point(81, 121);
+            this.buttonincluir.BackColor = System.Drawing.Color.Yellow;
+            this.buttonincluir.Location = new System.Drawing.Point(12, 141);
             this.buttonincluir.Name = "buttonincluir";
-            this.buttonincluir.Size = new System.Drawing.Size(207, 150);
+            this.buttonincluir.Size = new System.Drawing.Size(163, 130);
             this.buttonincluir.TabIndex = 7;
             this.buttonincluir.Text = "Incluir";
-            this.buttonincluir.UseVisualStyleBackColor = true;
+            this.buttonincluir.UseVisualStyleBackColor = false;
             this.buttonincluir.Click += new System.EventHandler(this.buttonincluir_Click);
             // 
             // listboxcontatos
@@ -106,11 +108,24 @@
             this.listboxcontatos.Size = new System.Drawing.Size(308, 264);
             this.listboxcontatos.TabIndex = 8;
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Yellow;
+            this.button1.Location = new System.Drawing.Point(181, 141);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(163, 130);
+            this.button1.TabIndex = 9;
+            this.button1.Text = "organizar";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Cyan;
             this.ClientSize = new System.Drawing.Size(670, 283);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.listboxcontatos);
             this.Controls.Add(this.buttonincluir);
             this.Controls.Add(this.label3);
@@ -136,6 +151,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button buttonincluir;
         private System.Windows.Forms.ListBox listboxcontatos;
+        private System.Windows.Forms.Button button1;
     }
 }
 

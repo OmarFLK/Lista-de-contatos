@@ -83,6 +83,7 @@ namespace Lista_de_contatos
 
         private void buttonincluir_Click(object sender, EventArgs e)
         {
+            
             //cria um objeto da classe contato
             Class1 contato = new Class1();
             contato.Nome = textboxnome.Text;
@@ -92,6 +93,7 @@ namespace Lista_de_contatos
             //listboxcontatos.Items.Add(contato.ToString());
 
             Escrever(contato);
+            organizar();
             ler();
             Exibir();
             limparformulario();
@@ -99,8 +101,38 @@ namespace Lista_de_contatos
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            organizar();
             ler();
             Exibir();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            organizar();
+            Exibir();
+        }
+
+        private void organizar() 
+        {
+            Class1 temporario;
+            bool troca= true;
+
+           do
+            {
+                troca = false;
+                for (int x = 0; x < contatos.Length - 1; x++)
+                {
+                    if (contatos[x].Nome.CompareTo(contatos[x + 1].Nome) > 0)
+                    {
+                        temporario = contatos[x];
+                        contatos[x] = contatos[x + 1];
+                        contatos[x + 1] = temporario;
+                        troca = true;
+                    }
+                }
+
+            } while (troca == true);
+        }
+
     }
 }
